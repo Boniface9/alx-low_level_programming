@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c "$CFILE" -o "$(basename "main.c" .c).o"
+gcc -c "$main.c" -o "$(basename "main.c" .c).o"
