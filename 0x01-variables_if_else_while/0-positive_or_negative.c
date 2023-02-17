@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(void)
+int main(void) /* Do not touch this code*/
 {int n;
 srand(time(NULL)); /* Do not touch this code*/
 n = rand() - RAND_MAX / 2; /*Do not touch this code*/
