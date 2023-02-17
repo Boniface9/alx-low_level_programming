@@ -7,15 +7,15 @@
 int main(void)
 {char letter = 'a';
 /*Print lowercase alphabet*/
-while (letter <= 'z') {
-putchar(letter);
+while (letter <= 'z')
+{putchar(letter);
 letter++;
 }
 /*Reset letter to 'A'*/
 letter = 'A';
 /*Print uppercase alphabet*/
-while (letter <= 'Z') {
-putchar(letter);
+while (letter <= 'Z')
+{putchar(letter);
 letter++;
 }
 /*Print newline character*/
