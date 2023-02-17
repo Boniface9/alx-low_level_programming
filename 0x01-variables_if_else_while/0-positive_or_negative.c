@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - Entry point
+ *
+ * This function prints whether a randomly generated number is positive or negative.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void) /* Do not touch this code*/
 {int n;
 srand(time(NULL)); /* Do not touch this code*/
