@@ -6,10 +6,10 @@
  * This function prints whether a randomly generated number is positive or negative.
  * Return: Always 0 (Success)
 */
-int main(void) /* Do not touch this code*/
+int main(void)
 {int n;
-srand(time(NULL)); /* Do not touch this code*/
-n = rand() - RAND_MAX / 2; /*Do not touch this code*/
+srand(time(NULL));
+n = rand() - RAND_MAX / 2;
 printf("%d ", n);
 if (n > 0)
 printf("is positive\n");
