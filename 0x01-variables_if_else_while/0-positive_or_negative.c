@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(){int n;
+int main(void){
+int n;
 srand(time(NULL)); /* Do not touch this code*/
 n = rand() - RAND_MAX / 2; /*Do not touch this code*/
 printf("%d\n", n);
