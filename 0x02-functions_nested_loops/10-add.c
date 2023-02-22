@@ -7,7 +7,7 @@
  *@return The sum of a and b
 */
 int add(int a, int b);
-return a + b;
+
 int main()
 {
 int x = 5;
