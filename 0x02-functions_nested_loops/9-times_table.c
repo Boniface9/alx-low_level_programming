@@ -5,27 +5,21 @@
  */
 void times_table(void)
 {
-int row, column, result;
-for (row = 0; row <= 9; row++)
+int i, j, result;
+for (i = 0; i <= 9; i++)
 {
-_putchar('0');
-_putchar(',');
-_putchar(' ');
-for (column = 1; column <= 9; column++)
+for (j = 0; j <= 9; j++)
 {
-result = row * column;
-if (result <= 9)
+result = i * j;
+if (j == 0)
 {
-_putchar(' ');
+printf("%d", result);
 }
-_putchar(result / 10 + '0');
-_putchar(result % 10 + '0');
-if (column < 9)
+else
 {
-_putchar(',');
-_putchar(' ');
+printf(", %2d", result);
 }
 }
-_putchar('\n');
+printf("\n");
 }
 }
