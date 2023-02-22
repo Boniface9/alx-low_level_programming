@@ -1,14 +1,8 @@
 #include <stdio.h>
-/*
- * File: print_to_98.c
- * Author: John Doe
- * -------------------
- * Prints all natural numbers from n to 98, followed by a new line.
- * Numbers must be separated by a comma, followed by a space.
- * Numbers should be printed in order.
- * The first printed number should be the number passed to your function.
- * The last printed number should be 98.
- * You are allowed to use the standard library.
+/**
+ * print_to_98 - Prints all natural numbers from n to 98.
+ *
+ * @n: The starting number.
  */
 void print_to_98(int n)
 {
