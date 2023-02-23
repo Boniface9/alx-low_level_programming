@@ -1,4 +1,8 @@
 #include <stdio.h>
+/*
+ * File: 9-fizz_buzz.c
+ * Desc: A program that prints the numbers from 1 to 100, with modifications.
+ */
 
 int main(void)
 {
@@ -23,5 +27,5 @@ printf("%d ", i);
 }
 }
 printf("\n");
-return 0;
+return (0);
 }
