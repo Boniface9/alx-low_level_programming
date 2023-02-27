@@ -2,10 +2,15 @@
 #include <string.h>
 
 /**
- * store the starting address of dest
- * copy each character from src to dest until we reach the null terminator
- * add the null terminator to the end of dest
+ * _strcpy - Copies the string pointed to by src, including the
+ *           terminating null byte, to the buffer pointed to by dest.
+ *
+ * @dest: A pointer to the destination buffer.
+ * @src: A pointer to the source string.
+ *
+ * Return: A pointer to the destination buffer.
  */
+
 char *_strcpy(char *dest, const char *src)
 {
 char* dest_start = dest;
