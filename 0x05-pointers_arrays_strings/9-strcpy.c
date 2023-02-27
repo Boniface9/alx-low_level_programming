@@ -15,6 +15,6 @@ while (*src != '\0')
 dest++;
 src++;
 }
-*dest = '\0'; // add the null terminator to the end of dest
+*dest = '\0';
 return dest_start;
 }
