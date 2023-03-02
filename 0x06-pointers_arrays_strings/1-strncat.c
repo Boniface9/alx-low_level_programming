@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 #include "main.h"
 /**
@@ -6,7 +6,6 @@
  * @dest: destination string
  * @src: source string
  * @n: maximum number of bytes to be used from src
- *
  * Return: a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
@@ -23,5 +22,5 @@ i++;
 j++;
 }
 dest[i] = '\0';
-return( dest);
+return (dest);
 }
