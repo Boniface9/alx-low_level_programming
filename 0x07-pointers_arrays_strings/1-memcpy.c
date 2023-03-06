@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /*
- * _memcpy - Copies `n` bytes of data from `src` to `dest`.
+ * _memcpy-Copies `n` bytes of data from `src` to `dest`.
  * @dest: pointer to the destination memory
  * @src: pointer to the source memory
  * @n: number of bytes to be copied
- *
  * Return: pointer to the destination memory address.
  */
 
