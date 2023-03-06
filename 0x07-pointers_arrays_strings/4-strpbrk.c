@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <string.h>
 /**
  * _strpbrk - Search a string for any of a set of bytes
  * @s: The string to search
@@ -24,5 +24,5 @@ a++;
 }
 s++;
 }
-return NULL;
+return (NULL);
 }
