@@ -15,9 +15,9 @@ int mid;
 if (low <= high)
 {
 mid = (low + high) / 2;
-if (mid * mid == n)
+if (mid *mid == n)
 return (mid);
-else if (mid * mid < n)
+else if (mid *mid < n)
 return (_sqrt(mid + 1, high, n));
 else
 return (_sqrt(low, mid - 1, n));
