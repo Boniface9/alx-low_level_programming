@@ -1,0 +1,1 @@
+My static reamde file
