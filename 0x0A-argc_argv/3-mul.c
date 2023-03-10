@@ -7,17 +7,18 @@
  * @argv: array of arguments
  * Return: 0 if successful, 1 if error
  */
+
 int main(int argc, char *argv[])
 {
 int a, b, product;
-if (argc != 3) /* check if the number of arguments is correct */
+if (argc != 3)
 {
-printf("Error\n"); /* print error message */
-return (1); /* return 1 to indicate error */
+printf("Error\n");
+return (1);
 }
-a = atoi(argv[1]); /* convert the first argument to an integer */
-b = atoi(argv[2]); /* convert the second argument to an integer */
-product = a * b; /* calculate the product of the two numbers */
-printf("%d\n", product); /* print the product */
-return (0); /* return 0 to indicate success */
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+product = (a * b);
+printf("%d\n", product);
+return (0);
 }
