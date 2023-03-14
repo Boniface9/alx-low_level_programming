@@ -1,15 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
 /**
  * str_concat - Concatenates two strings.
  * @s1: Pointer to the first string.
  * @s2: Pointer to the second string.
- * Return: Pointer to a newly allocated space 
- *in memory containing the concatenated
+ * Return: Pointer to a newly allocated space in memory containing the concatenated
 */
-
 char *str_concat(char *s1, char *s2)
 {
 int len1 = 0, len2 = 0, i, j;
