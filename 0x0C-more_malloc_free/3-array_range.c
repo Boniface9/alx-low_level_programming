@@ -2,17 +2,26 @@
 #include <atdio.h>
 #include "main.h"
 
+/**
+ * array_range - create an array of integers
+ * from min to max, inclusive
+ * @min: the minimum value to include in the array
+ * @max: the maximum value to include in the array
+ *
+ * Return: If min > max or if malloc fails, return NULL.
+ * Otherwise, return a pointer to the newly created array.
+ */
 int *array_range(int min, int max)
 {
-int *arr;
-int size, i;
+int *array;
+int i, size;
 if (min > max)
-return NULL;
+return (NULL);
 size = max - min + 1;
-arr = malloc(size * sizeof(int));
-if (!arr)
+array = malloc(sizeof(int) * size);
+if (array == NULL)
 return (NULL);
 for (i = 0; i < size; i++)
-arr[i] = min + i;
-return (arr);
+array[i] = min + i;
+return (array);
 }
