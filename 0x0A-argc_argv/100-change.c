@@ -10,25 +10,25 @@
 int main(int argc, char *argv[])
 {
 int cents, coins;
-if (argc != 2) /* check if the number of arguments is correct */
+if (argc != 2)
 {
-printf("Error\n"); /* print error message */
-return (1); /* return 1 to indicate error */
+printf("Error\n");
+return (1);
 }
-cents = atoi(argv[1]); /* convert the argument to an integer */
+cents = atoi(argv[1]);
 coins = 0;
-if (cents > 0) /* check if the amount is positive */
+if (cents > 0)
 {
-coins += cents / 25; /* add the number of quarters */
-cents %= 25; /* update the remaining cents */
-coins += cents / 10; /* add the number of dimes */
-cents %= 10; /* update the remaining cents */
-coins += cents / 5; /* add the number of nickels */
-cents %= 5; /* update the remaining cents */
-coins += cents / 2; /* add the number of pennies */
-cents %= 2; /* update the remaining cents */
-coins += cents; /* add any leftover cent */
+coins += cents / 25;
+cents %= 25;
+coins += cents / 10;
+cents %= 10;
+coins += cents / 5;
+cents %= 5;
+coins += cents / 2;
+cents %= 2;
+coins += cents;
 }
-printf("%d\n", coins); /* print the minimum number of coins */
-return (0); /* return 0 to indicate success */ 
+printf("%d\n", coins);
+return (0); 
 }
