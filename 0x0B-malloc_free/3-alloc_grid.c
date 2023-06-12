@@ -3,13 +3,12 @@
 #include "main.h"
 
 /**
- * _strdup - duplicates a string
- * @str: string to be duplicated
+ * alloc_grid - Allocates a 2D grid of integers
+ * @width: The width of the grid
+ * @height: The height of the grid
  *
- * Return: Pointer to the duplicated string, NULL if str is NULL or if memory
- *         allocation fails
+ * Return: Pointer to the allocated grid, or NULL if failure
  */
-
 int **alloc_grid(int width, int height)
 {
 int i, j;
