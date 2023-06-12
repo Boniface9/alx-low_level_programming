@@ -10,25 +10,33 @@
  *         allocation fails
  */
 
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
-int len1 = 0, len2 = 0, i, j;
-char *result;
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
-while (s1[len1] != '\0')
-len1++;
-while (s2[len2] != '\0')
-len2++;
-result = malloc((len1 + len2 + 1) * sizeof(char));
-if (result == NULL)
-return NULL;
-for (i = 0; i < len1; i++)
-result[i] = s1[i];
-for (j = 0; j < len2; j++)
-result[i + j] = s2[j];
-result[i + j] = '\0';
-return (result);
+if (width <= 0 || height <= 0)
+{
+return (NULL);
+}
+int **grid = malloc(height * sizeof(int *));
+if (grid == NULL)
+{
+return (NULL);
+}
+for (int i = 0; i < height; i++)
+{
+grid[i] = malloc(width * sizeof(int));
+if (grid[i] == NULL)
+{
+for (int j = 0; j < i; j++)
+{
+free(grid[j]);
+}
+free(grid);
+return (NULL);
+}
+for (int j = 0; j < width; j++)
+{
+grid[i][j] = 0;
+}
+}
+return (grid);
 }
