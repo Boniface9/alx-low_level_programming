@@ -8,7 +8,7 @@
  * @c: character to initialize array with chars
  * Return: pointer to the array, or NULL if it fails
  */
-char *create_array(unsigned int size, char c)
+/*char *create_array(unsigned int size, char c)
 {
 char *arr;
 unsigned int i;
@@ -18,4 +18,17 @@ return NULL;
 for (i = 0; i < size; i++)
 arr[i] = c;
 return arr;
+}*/
+
+char *create_array(unsigned int size, char c)
+{
+if (size == 0)
+return NULL;
+char *arr = malloc((size + 1) * sizeof(char));
+if (arr == NULL)
+return NULL;
+for (unsigned int i = 0; i < size; i++)
+arr[i] = c;
+arr[size] = '\0';
+return (arr);
 }
