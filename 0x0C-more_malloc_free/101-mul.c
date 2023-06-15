@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 /* This program multiplies two positive numbers.
- *
  * Usage: mul num1 num2
  * num1 and num2 will be passed in base 10
  * Print the result, followed by a new line
@@ -17,6 +16,15 @@
 int isNumber(char *str);
 int _strlen(char *str);
 void multiply(char *num1, char *num2);
+
+/*
+* This C program takes two numbers as input and validates their format.
+* It expects exactly two arguments and checks if they are valid numbers.
+* If either argument is not a valid number, the program terminates with
+* an error message. If both arguments are valid numbers, the program 
+* performs the multiplication operation but does not display or store 
+* the result. Finally, the program exits with a return value of 0.
+*/
 int main(int argc, char *argv[])
 {
 char *num1;
@@ -36,6 +44,7 @@ return (98);
 multiply(num1, num2);
 return (0);
 }
+
 int isNumber(char *str)
 {
 int i = 0;
@@ -58,6 +67,16 @@ len++;
 }
 return (len);
 }
+
+/*
+ * Description: Function to multiply two numbers.
+ *
+ * Parameters:
+ * - num1: First number to be multiplied.
+ * - num2: Second number to be multiplied.
+ *
+ * Note: The numbers should be passed as strings.
+ */
 void multiply(char *num1, char *num2)
 {
 int len1 = _strlen(num1);
