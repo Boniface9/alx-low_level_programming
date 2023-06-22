@@ -3,15 +3,15 @@
 #include "variadic_functions.h"
 #include <unistd.h>
 
+void print_number(int n);
 /**
- * print_numbers - prints out numbers from variadic function
+ * print_numbers: prints out numbers from variadic function
  * @seperator: pointer to seperation string
  * @n: number of numbers to print
  * @...: numbers to print
- *
  * Return: always void
  */
-void print_number(int n);
+
 void print_numbers(const char *seperator, const unsigned int n, ...)
 {
 va_list nums;
