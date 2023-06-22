@@ -7,7 +7,6 @@
  * @seperator: seperator to print between strings
  * @n: number of strings
  * @...: strings to print
- *
  * Return: always void
  */
 
