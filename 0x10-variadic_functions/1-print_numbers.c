@@ -11,7 +11,6 @@
  *
  * Return: always void
  */
-
 void print_number(int n);
 void print_numbers(const char *seperator, const unsigned int n, ...)
 {
@@ -34,12 +33,9 @@ va_end(nums);
 
 /**
  * print_number - print number n with putchar
- *
  * @n: number to print
- *
  * Return: always void
  */
-
 void print_number(int n)
 {
 printf("%d", n);
