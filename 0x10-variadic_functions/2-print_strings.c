@@ -40,9 +40,7 @@ if (seperator == NULL || *seperator == '\0')
 continue;
 sep_cp = seperator;
 while ((*sep_cp) && (i < (n - 1)))
-{
 putchar(*sep_cp++);
 }
 putchar('\n');
-}
 }
