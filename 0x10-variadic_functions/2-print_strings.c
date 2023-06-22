@@ -3,11 +3,13 @@
 #include <unistd.h>
 #include "variadic_functions.h"
 
-/**
- * print_strings - Prints strings followed by a new line
- * @separator: The string to be printed between the strings
- * @n: The number of strings passed to the function
+/*
+ * print_strings - Prints a sequence of strings followed by a new line.
+ * @seperator: Separator between strings.
+ * @n: Number of strings to be printed.
+ * @...: Strings to be printed.
  */
+
 
 void print_strings(const char *seperator, const unsigned int n, ...)
 {
@@ -38,6 +40,7 @@ if (seperator == NULL || *seperator == '\0')
 continue;
 sep_cp = seperator;
 while ((*sep_cp) && (i < (n - 1)))
+{
 putchar(*sep_cp++);
 }
 putchar('\n');
