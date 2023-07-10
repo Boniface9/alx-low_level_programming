@@ -8,6 +8,7 @@
  * and writes the provided content to it.
  * @filename: The name of the file to create.
  * @text_content: The NULL-terminated string to write to the file.
+ *
  * Return: 1 on success, -1 on failure.
  * If the file already exists, truncate it.
  * If filename is NULL, return -1.
