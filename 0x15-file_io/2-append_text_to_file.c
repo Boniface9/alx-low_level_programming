@@ -4,17 +4,16 @@
 #include <unistd.h>
 
 /**
- * create_file - Creates a file with the specified name and writes the provided content to it.
+ * create_file - Creates a file with the specified name
+ * and writes the provided content to it.
  * @filename: The name of the file to create.
  * @text_content: The NULL-terminated string to write to the file.
- *
  * Return: 1 on success, -1 on failure.
  * If the file already exists, truncate it.
  * If filename is NULL, return -1.
  * If text_content is NULL, create an empty file.
  * The created file has permissions rw-------.
  */
-
 int append_text_to_file(const char *filename, char *text_content)
 {
 int fd, bytes_written, text_length = 0;
