@@ -4,7 +4,8 @@
 #include <unistd.h>
 
 /**
- * create_file - Creates a file with the specified name and writes the provided content to it.
+ * create_file - Creates a file with the specified name
+ * and writes the provided content to it.
  * @filename: The name of the file to create.
  * @text_content: The NULL-terminated string to write to the file.
  *
